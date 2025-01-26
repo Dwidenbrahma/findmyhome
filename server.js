@@ -29,6 +29,12 @@ connectDB();
 // Middleware setup
 app.use(express.json());
 app.use(cors());
+app.use(
+  cors({
+    origin: ["https://findmyhome-en3h.onrender.com"],
+    credentials: true,
+  })
+);
 app.use("/uploads", express.static("uploads"));
 app.use(express.urlencoded({ extended: true }));
 
