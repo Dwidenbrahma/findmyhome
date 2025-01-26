@@ -53,6 +53,4 @@ app.get("*", (req, res) => {
 });
 
 const PORT = process.env.PORT;
-app.listen(PORT, () => {
-  console.log(`App is live on: http://localhost:${PORT}`);
-});
+app.listen(PORT, () => {});
